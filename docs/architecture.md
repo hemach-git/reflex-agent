@@ -66,3 +66,70 @@ Future versions may introduce:
 - Multi-agent orchestration
 
 
+```markdown
+# Agent Architecture
+
+## V0.1.0 — Basic Reflex Agent
+
+The initial agent followed:
+
+```text
+Observe → Condition → Action → Response
+Decision-making was entirely rule-based.
+V0.2.0 — Tool-Using Agent
+V0.2.0 introduces external capabilities through a Tool Registry.
+The execution pattern becomes:
+Observe
+   ↓
+Decide
+   ↓
+Select Tool
+   ↓
+Execute Tool
+   ↓
+Receive Result
+   ↓
+Respond
+Architecture
+                    User
+                     |
+                     v
+                  Agent
+                     |
+              Tool Selection
+                     |
+                     v
+               Tool Registry
+                /          \
+               /            \
+              v              v
+         Calculator        Clock
+              |               |
+              v               v
+          Tool Result     Tool Result
+               \             /
+                \           /
+                 v         v
+                    Agent
+                     |
+                     v
+                  Response
+Key Design Principle
+The agent is responsible for deciding which capability to use.
+Tools are responsible for executing capabilities.
+The Tool Registry provides the abstraction between the agent and individual tools.
+V0.2.0 Limitations
+Tool selection is still rule-based.
+The agent does not yet have:
+•	LLM reasoning
+•	conversational context
+•	memory
+•	RAG
+•	dynamic tool discovery
+•	planning
+•	multi-step reasoning
+•	guardrails
+•	production observability
+These capabilities will be introduced in later versions.
+
+---

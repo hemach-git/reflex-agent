@@ -1,18 +1,17 @@
 # Reflex Agent
 
-A simple rule-based reflex agent implemented in Python.
 
 ## Version
 
-V0.1.0
+V0.1.0  - A simple rule-based reflex agent implemented in Python.
+
+V0.2.0  - A progressively evolving AI agent project built from first principles.
 
 ## Overview
 
-This project demonstrates the fundamental architecture of a simple
-reflex agent.
+This project demonstrates the fundamental architecture of a simple reflex agent.
 
-The agent observes the current user input, evaluates predefined
-conditions, and performs an appropriate action.
+The agent observes the current user input, evaluates predefined conditions, and performs an appropriate action.
 
 ## Architecture
 
@@ -100,3 +99,33 @@ V0.6.0 - Guardrails
 V0.7.0 - Observability
 V0.8.0 - Multi-Agent
 V1.0.0 - Enterprise Agent Platform
+
+## Current Version
+
+**V0.2.0 — Tool-Using Agent**
+
+The agent can now:
+
+- Respond to greetings
+- Respond to help requests
+- Handle basic calculations
+- Retrieve the current time
+- Discover registered tools
+- Execute tools through a Tool Registry
+- Expose tool names and descriptions
+- Provide basic tool execution traces
+
+And add:
+## Agent Evolution
+
+| Version | Capability               |
+|---------|--------------------------|
+| V0.1.0 | Basic Reflex Agent        |
+| V0.2.0 | Tool-Using Agent          |
+| V0.3.0 | Context-Aware Agent       |
+| V0.4.0 | Memory                    |
+| V0.5.0 | RAG                       |
+| V0.6.0 | Guardrails                |
+| V0.7.0 | Observability             |
+| V0.8.0 | Multi-Agent               |
+| V1.0.0 | Enterprise Agent Platform |
