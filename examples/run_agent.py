@@ -1,3 +1,9 @@
+from pathlib import Path
+import sys
+
+# Support direct execution from a source checkout without installation.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
 from reflex_agent.agent import ReflexAgent
 
 def main():
